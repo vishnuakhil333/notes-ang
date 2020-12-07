@@ -1,0 +1,12 @@
+.bg-conatainer {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+.calci_card {
+    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    height: 50vh;
+    padding-left: 500px;
+    padding-top: 200px;
+}
