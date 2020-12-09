@@ -5,6 +5,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FormsModule} from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,11 +15,17 @@ import { GalleryComponent } from './gallery/gallery.component';
 import {HttpClientModule} from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { GalleryApiService } from './gallery-api.service';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
+// import { StarRatingComponent } from './movie-details/star-rating/star-rating.component';
+import { from } from 'rxjs';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GalleryComponent
+    GalleryComponent,
+    MovieDetailsComponent,
+    // StarRatingComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +36,11 @@ import { GalleryApiService } from './gallery-api.service';
     MatCardModule,
     MatDividerModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatFormFieldModule
   ],
   providers: [GalleryApiService],
   bootstrap: [AppComponent]

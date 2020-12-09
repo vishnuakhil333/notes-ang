@@ -11,7 +11,7 @@ export class GalleryComponent implements OnInit {
   constructor(private service: GalleryApiService) { }
 
   ngOnInit() {
-    this.service.getMovieDetails().subscribe((result : any) => {
+    this.service.getMovies().subscribe((result : any) => {
       this.movies = result.results;
       console.log(result);
     });
