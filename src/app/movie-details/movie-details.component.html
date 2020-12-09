@@ -4,7 +4,7 @@
   </div>
   <div class="container">
   <div class="row">
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-md-6 col-lg-5">
       <mat-card class="mat-elevation-z4 example-card">
         <img mat-card-image class="example-img-size" src="http://image.tmdb.org/t/p/w185//{{movie.poster_path}}" alt="">
         <mat-card-header>
@@ -17,14 +17,14 @@
         </mat-card-header>        
       </mat-card>
     </div>
-    <div class="col-12 col-lg-6">    
+    <div class="col-12 col-md-6 col-lg-6">    
       <h1 class="movie-overview">{{movie.overview}}</h1> <br>
       <div class="d-flex flex-row">
         <div>
           <h4>Genre: </h4>
         </div>
         <div *ngFor="let genre of movie.genres">
-          <p class="list-horizontal"> {{genre.name}} <strong>|</strong></p>
+          <p class="list-horizontal">{{genre.name}}</p>
           <!-- <ul>
             <li class="list-horizontal">{{genre.name}}</li>
           </ul> -->
@@ -36,15 +36,15 @@
 </div>
 <div class="container2">
   <div class="row">
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-md-6 col-lg-4">
       <h1>Release Date: {{movie.release_date}}</h1>
     </div>
   </div>
   <div class="row">
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-md-6 col-lg-4">
       <h1>Movie Status: {{movie.status}}</h1>
     </div>
-    <div class="col-12">
+    <div class="col-12 col-md-6 col-lg-4">
       <h1>Ratings</h1>
       <!-- <span style="font-size: 48px;">
         <span style="color: red;">
@@ -60,7 +60,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-md-6 col-lg-4">
       <h1>Popularity: {{movie.popularity}}</h1>
     </div>
   </div>

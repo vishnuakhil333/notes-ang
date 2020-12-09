@@ -1,18 +1,13 @@
 .example-card {
   max-width: 350px;
   height: 380px;
-  margin: 12px;
 }
 .example-img-size {
   width: 350px;
   height: 300px;
-  /* position: absolute; */
-
 }
 .bg-container {
   background-color: rgb(65, 82, 76);
-  padding-left: 100px;
-  padding-right: 100px;
 }
 .heading-card {
   height: 10vh;
@@ -28,32 +23,18 @@
   font-weight: bold;
   font-style: normal;
   text-align: center;
-  padding: 10px;
-  /* text-decoration: underline; */
-}
-.content {
-  padding-top: 30px;
 }
 .movie-heading {
   text-align: center;
 }
 .popularity {
-  /* text-align: left; */
   font-family: 'Roboto';
-  /* font-weight: 30px; */
 }
 .movie-overview {
   font-family: 'Roboto';
   overflow: hidden;
   width: 300px;
   height: 100px;
-  /* display: flex;
-  flex-direction: column;
-  position: absolute; */
-  /* top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px; */
 }
 .show {
   overflow: visible;
